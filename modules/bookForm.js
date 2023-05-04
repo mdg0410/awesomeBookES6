@@ -1,5 +1,7 @@
-export default class BookForm {
+class BookForm {
   constructor(name) {
     this.form = document.forms[name];
   }
 }
+
+export default BookForm;

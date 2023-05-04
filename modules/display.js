@@ -1,5 +1,5 @@
-import Book from './bookForm.js';
-import BookForm from './book.js';
+import Book from './book.js';
+import BookForm from './bookForm.js';
 
 class Display {
   books = [];
