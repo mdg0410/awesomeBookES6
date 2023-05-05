@@ -13,26 +13,26 @@ class Display {
     this.setCurrentForm();
   }
 
-  setCurrentForm(name = 'bookForm') {
+  setCurrentForm = (name = 'bookForm') => {
     this.workForm = new BookForm(name);
     this.workForm.form.onsubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit(e) {
+  handleSubmit = (e) => {
     e.preventDefault();
     // eslint-disable-next-line max-len
     this.addBook(this.workForm.form.title.value, this.workForm.form.author.value, this.books.length + 1);
     this.workForm.form.reset();
   }
 
-  addBook(title, author, index) {
+  addBook = (title, author, index) => {
     const book = new Book(title, author, index);
     this.books.push(book);
     this.render();
     this.saveBooks();
   }
 
-  removebook(index) {
+  removebook = (index) => {
     // this.books = [];
     this.books = this.books.filter((book) => book.index !== index);
     for (let i = 0; i < this.books.length; i += 1) {
@@ -42,7 +42,7 @@ class Display {
     this.saveBooks();
   }
 
-  render() {
+  render = () => {
     const bookContainer = document.getElementById('books-cont');
     bookContainer.innerHTML = '';
     if (this.books.length === 0) {
@@ -56,7 +56,7 @@ class Display {
     }
   }
 
-  saveBooks() {
+  saveBooks = () => {
     localStorage.setItem('book', JSON.stringify(this.books));
   }
 }

@@ -5,7 +5,7 @@ export default class Book {
     this.index = index;
   }
 
-  createNode() {
+  createNode = () => {
     const Node = document.createElement('li');
     const btn = document.createElement('button');
 

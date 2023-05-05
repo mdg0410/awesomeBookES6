@@ -62,7 +62,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 **Open the live-demo of the project**
-[Project Link][https://mdg0410.github.io/Awesome-books-ES6/]
+[Project Link][https://mdg0410.github.io/awesomeBookES6/]
 
 <!-- GETTING STARTED -->
 
@@ -73,11 +73,11 @@ To get a local copy of this exercice, Please follow these simple example steps.
 
 1. Clone this repository or download the Zip folder:
 
-**``https://github.com/mdg0410/Awesome-books-ES6.git``**
+**``https://github.com/mdg0410/awesomeBookES6.git``**
 
 2. Navigate to the location of the folder in your machine:
 
-**`` C:\Users\PATH\src\Awesome-books-ES6>``**
+**`` C:\Users\PATH\src\awesomeBookES6>``**
 
 3. Press Enter to navigate to your local clone.
 4. Open terminal and run this command npm install
